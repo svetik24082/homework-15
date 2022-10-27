@@ -5,6 +5,7 @@ public class Main {
                 0,
                 " МКПП", " универсал ",
                 null, 5, false);
+        car.refill();
         Car car1 = new Car(" Audi ", " A8 50 L TDI quattro ",
                 2020,
                 " Германия ", " черный ",
@@ -49,6 +50,7 @@ public class Main {
                 1700, 0f,
                 "Ленинградский вокзал ",
                 " Ленинград-Пассажирский", 8);
+        train.refill();
         System.out.println(train);
         System.out.println(train1);
         System.out.println();
@@ -59,6 +61,7 @@ public class Main {
                 "Россия ", "зеленый", 80f);
         Bus bus2 = new Bus(" Вольво", null, 2020,
                 null, "синий", 160f);
+        bus.refill();
         System.out.println(bus);
         System.out.println(bus1);
         System.out.println(bus2);

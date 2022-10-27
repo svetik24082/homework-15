@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport {
     private final String make;
     private final String model;
     private final int yearOfManufacture;  // год выпуска
@@ -50,6 +50,7 @@ public class Transport {
 
         }
     }
+
     public String getMake() {
         return make;
     }
@@ -77,4 +78,6 @@ public class Transport {
                 ", maximumSpeedOfMovement=" + maximumSpeedOfMovement +
                 '}';
     }
+
+    public abstract void refill();
 }

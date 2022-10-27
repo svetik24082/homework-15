@@ -66,7 +66,7 @@ public class Car extends Transport {
 
     public void setSummerTyres(//boolean summerTyres) {
     ) {
-        //this.summerTyres = summerTyres;
+
         int currentMonth = LocalDate.now().getMonthValue();
         this.summerTyres = currentMonth >= 4 || currentMonth <= 11;
     }
@@ -105,6 +105,13 @@ public class Car extends Transport {
                 ", numberOfSeats=" + numberOfSeats +
                 ", summerTyres=" + summerTyres +
                 '}';
+    }
+
+    @Override
+    public void refill() {
+        System.out.println("можно заправлять бензином, " +
+                "дизелем на заправке или заряжать на специальных электропарковках, " +
+                "если это электрокар");
     }
 
     public void changeTires() {
